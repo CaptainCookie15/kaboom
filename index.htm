@@ -1,88 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-body {
-  background-image: url('https://images.unsplash.com/photo-1589859762194-eaae75c61f64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
-}
-</style>
-</head>
 <body>
 
-<script type="text/javascript">
-   cookies = 0
-
-   function cookieClick() {
-      cookies += 1
-   }
-</script>
-
-<script type="text/javascript">
-   cps = 0
-   name = "Random Dude"
-
-   window.setInterval(function () {
-  cookies += cps;
-  document.getElementById("cookies").innerHTML = "You have " + cookies + " cookies!";
-}, 1000);
-
-   window.setInterval(function () {
-  document.getElementById("cps").innerHTML = "Your CPS(Cookies Per Second) is " + cps;
-});
-   
-   function upgrade() {
-      if (cookies > 9){
-        alert("You have upgraded your cps")
-        cps += 1
-        cookies -= 10
-      }
-      else{
-        alert("You need 10 cookies to upgrade your cps!")
-      }
-   }
-
-   function upgradeGolden() {
-      if (cookies > 99){
-        alert("You have imported a golden cookie from cookie clicker.")
-        cps += 15
-        cookies -= 100
-      }
-      else{
-        alert("You need 100 cookies to get a golden cookie!")
-      }
-   }
-
-   function sus() {
-      password = prompt("Your computer has been hacked, please enter your password(don't enter your real password):")
-
-      alert("Ha I know your password now, it's " + password)
-   }
-
-   function changeName() {
-      name = prompt("What would you like your new name to be:")
-      alert(name)
-      document.getElementById("username").innerHTML = name + "'s Bakery";
-   }
-</script>
-
-
-<h1>Cookie Clicker</h1>
-<p style="color:red" id="username">Random Dude's Bakery</p>
-<button type="button" onclick="changeName()">Change Name</button>
-<div style="color:yellow" id="cookies"></div>
-<div id="cps"></div>
-<p>Click the cookie to begin</p>
-
-<button type="button" onclick="cookieClick()"><img src="https://cdn.pixabay.com/photo/2020/11/28/11/25/cookie-5784367_1280.png" alt="Cookie didn't load :(" width="100" height="100"></button>
-
-<button type="button" onclick="upgrade()">First Upgrade: Cursor</button>
-
-<button type="button" onclick="upgradeGolden()">Second Upgrade: Golden Cookie</button>
-
-<button type="button" onclick="sus()">Next Upgrade: Suspicious button</button>
-
+<meta http-equiv="Refresh" content="0; url='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'" />
 
 
 </body>
 </html>
-
