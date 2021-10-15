@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
-<body>
-
 <script>
-Promise.all([
-  fetch('sample.txt').then(x => x.text()),
-]).then(([sampleResp]) => {
-  console.log(sampleResp);
-});
-</script>
+import fs from 'node:fs/promises';
+  
+let replacment = "Learning how to write in a file."
 
-</body>
+fs.writeFile('sample.txt', replacment, (err) => {
+      
+    // In case of a error throw err.
+    if (err) throw err;
+})
+function getSampleText() {
+
+  Promise.all([
+    fetch('sample.txt').then(x => x.text())
+  ]).then(([sampleResp]) => {
+    console.log(sampleResp);
+  });
+}
+
+getSampleText();
+
+</script>
 </html>
