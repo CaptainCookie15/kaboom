@@ -2,7 +2,13 @@
 <html>
 <body>
 
-<script>alert(":)")</script>
+<script>
+ Promise.all([
+  fetch('sample.txt').then(x => x.text()),
+]).then(([sampleResp]) => {
+  console.log(sampleResp);
+});
+</script>
   
 <meta http-equiv="Refresh" content="0; url='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" />
 
