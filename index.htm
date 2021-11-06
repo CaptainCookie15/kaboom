@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-<style>
-h1 {text-align: center;}
-</style>
-</head>
-
-<h1>
-<u>
-Save Galveston
-</u>
-</h1>
-
 <script src="https://unpkg.com/kaboom/dist/kaboom.js"></script>
 
-<script type="module", src="main.js"></script>
+<script type="module">
+
+import kaboom from "https://unpkg.com/kaboom/dist/kaboom.mjs";
+
+kaboom({
+  global: true,
+  fullscreen: true,
+  scale: 1,
+  debug: true,
+  clearColor: [0,0,0,1],
+  background: [ 0, 0, 0],
+});
+
+loadRoot('https://i.imgur.com/')
+loadSprite('player', '1Xq9biB.png')
+
+add([
+  sprite("player")
+   ])
+</script>
 
 </html>
