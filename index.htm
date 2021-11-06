@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html>
-<script>
-import fs from 'node:fs/promises';
-  
-let replacment = "Learning how to write in a file."
 
-fs.writeFile('sample.txt', replacment, (err) => {
-      
-    // In case of a error throw err.
-    if (err) throw err;
-})
-function getSampleText() {
+<head>
+<style>
+h1 {text-align: center;}
+</style>
+</head>
 
-  Promise.all([
-    fetch('sample.txt').then(x => x.text())
-  ]).then(([sampleResp]) => {
-    console.log(sampleResp);
-  });
-}
+<h1>
+<u>
+Save Galveston
+</u>
+</h1>
 
-getSampleText();
-
+<script type="module", src="main.js">
+import kaboom from "https://unpkg.com/kaboom@next/dist/kaboom.mjs";
 </script>
+
+
+
 </html>
