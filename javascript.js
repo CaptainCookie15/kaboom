@@ -1,6 +1,5 @@
 import kaboom from "https://unpkg.com/kaboom/dist/kaboom.mjs";
 
-
 kaboom({background: [ 0, 0, 0, ]})
 
 loadRoot('https://i.imgur.com/')
@@ -202,7 +201,7 @@ scene("main", ({ level} = { level: 0}) => {
 
   const scoreLabel = add([
     text(score),
-    pos(30,40),
+    pos(40,40),
     scale(0.5),
     layer('ui'),
   ])
