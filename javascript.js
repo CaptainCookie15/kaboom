@@ -323,7 +323,7 @@ scene("main", ({ level} = { level: 0}) => {
 
   scene("lose", () => {
     add([
-    text("You Died!"),
+    text("You Died!\nPress Space To Restart"),
     ])
     keyPress('space', () => {
       go("main")
