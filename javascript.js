@@ -1,3 +1,6 @@
+import kaboom from "https://unpkg.com/kaboom/dist/kaboom.mjs";
+
+
 kaboom({background: [ 0, 0, 0, ]})
 
 loadRoot('https://i.imgur.com/')
